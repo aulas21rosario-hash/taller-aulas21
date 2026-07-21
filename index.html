@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller Presencial: De tu Cabeza al Aula | Aulas 21 Rosario</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="https://www.aulas21.com.ar" target="_blank" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-teal-500 flex items-center justify-center font-black text-xl text-white shadow-lg shadow-blue-500/20 group-hover:scale-105 transition">
+          A21
+        </div>
+        <div>
+          <span class="font-bold text-lg text-white tracking-tight">Aulas 21</span>
+          <span class="text-xs text-slate-400 block -mt-1">Rosario • www.aulas21.com.ar</span>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-4">
+        <a href="mailto:aulas21rosario@gmail.com" class="hidden sm:flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition">
+          <i data-lucide="mail" class="w-4 h-4 text-teal-400"></i> aulas21rosario@gmail.com
+        </a>
+        <a href="#registro" class="px-4 py-2 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-500 hover:to-teal-500 text-white font-bold text-xs sm:text-sm rounded-xl shadow-lg transition">
+          Reservar Cupo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative overflow-hidden pt-12 pb-20 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+    <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:20px_20px]"></div>
+    
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 text-center space-y-8">
+      
+      <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs sm:text-sm font-semibold px-4 py-2 rounded-full">
+        <i data-lucide="sparkles" class="w-4 h-4"></i>
+        Workshop Presencial Práctico de 2 Horas • Cupos Limitados
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
+        ¿Tienes un saber o profesión? <br>
+        <span class="bg-gradient-to-r from-blue-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">
+          Conviértelo en un Curso Presencial Rentable
+        </span>
+      </h1>
+
+      <p class="text-base sm:text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed">
+        Aprende a empaquetar tus conocimientos, definir tus precios y convocar alumnos en tiempo récord. Te llevas tu proyecto estructurado listo para lanzar en las instalaciones de <strong class="text-white font-semibold">Aulas 21 Rosario</strong>.
+      </p>
+
+      <!-- Tarjeta de Acción Rápida -->
+      <div class="max-w-xl mx-auto bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-2xl backdrop-blur text-left space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+          <div>
+            <span class="text-xs font-semibold uppercase text-slate-400">Modalidad & Lugar</span>
+            <p class="text-white font-bold flex items-center gap-1.5 mt-0.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-teal-400"></i> Sede Aulas 21 Rosario
+            </p>
+          </div>
+          <div class="text-right">
+            <span class="text-xs font-semibold uppercase text-slate-400">Entrada Simbólica</span>
+            <p class="text-xl font-black text-emerald-400">$4.000 ARS <span class="text-xs font-normal text-slate-400">(Coffee incl.)</span></p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-between text-xs text-amber-300 bg-amber-500/10 border border-amber-500/20 px-3 py-2 rounded-lg">
+          <span class="flex items-center gap-1.5 font-medium">
+            <i data-lucide="clock" class="w-4 h-4"></i> Quedan solo 6 cupos disponibles por capacidad de sala
+          </span>
+        </div>
+
+        <a href="#registro" class="block w-full py-4 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-500 hover:to-teal-500 text-white font-bold text-center rounded-xl shadow-lg shadow-blue-600/30 transition transform hover:-translate-y-0.5">
+          Quiero Reservar Mi Lugar Ahora
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECCIÓN DOLORES -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <div class="text-center space-y-3 mb-12">
+      <h2 class="text-xs uppercase font-bold text-teal-400 tracking-wider">Transformación Directa</h2>
+      <p class="text-2xl sm:text-4xl font-extrabold text-white">¿Te identificas con alguno de estos frenos?</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition">
+        <div class="w-10 h-10 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center mb-4">
+          <i data-lucide="help-circle" class="w-5 h-5"></i>
+        </div>
+        <h3 class="font-bold text-white text-lg mb-2">Desorden Pedagógico</h3>
+        <p class="text-slate-400 text-sm">"Sé mucho de mi tema, pero no tengo idea de cómo estructurarlo para enseñarlo sin abrumar a mis alumnos."</p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition">
+        <div class="w-10 h-10 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center mb-4">
+          <i data-lucide="dollar-sign" class="w-5 h-5"></i>
+        </div>
+        <h3 class="font-bold text-white text-lg mb-2">Incertidumbre de Precios</h3>
+        <p class="text-slate-400 text-sm">"No sé cuánto cobrar ni cuántos alumnos necesito para que sea un negocio verdaderamente rentable."</p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-blue-500/50 transition">
+        <div class="w-10 h-10 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center mb-4">
+          <i data-lucide="building" class="w-5 h-5"></i>
+        </div>
+        <h3 class="font-bold text-white text-lg mb-2">Falta de Espacio Profesional</h3>
+        <p class="text-slate-400 text-sm">"No dispongo de un lugar propio con proyector, Wi-Fi, climatización y recepción profesional para recibirlos."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ PRESENCIAL Y AULAS 21 -->
+  <section class="bg-slate-900 py-16 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Ventaja Competitiva</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+            La Era Post-Pantalla: Por qué la Presencialidad Manda
+          </h2>
+          <p class="text-slate-300 leading-relaxed">
+            Los cursos online grabados sufren más de un 85% de abandono. Los estudiantes están cansados de la frialdad virtual y buscan **experiencias reales, networking e intercambio directo**.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 bg-slate-950 rounded-xl border border-slate-800">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 mt-1">
+                <i data-lucide="trending-up" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Precios 3x a 5x Más Altos</h4>
+                <p class="text-xs text-slate-400 mt-1">El valor percibido de una clase presencial te permite cobrar tickets significativamente mayores.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 bg-slate-950 rounded-xl border border-slate-800">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 mt-1">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white">Aulas 21: Tu Socio Infraestructural</h4>
+                <p class="text-xs text-slate-400 mt-1">Salas modernas, tecnología audiovisual, climatización y el respaldo institucional de <a href="https://www.aulas21.com.ar" target="_blank" class="text-blue-400 underline">aulas21.com.ar</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Triángulo de Valor -->
+        <div class="bg-slate-950 p-8 rounded-3xl border border-slate-800 text-center relative">
+          <h3 class="text-lg font-bold text-white mb-6">El Triángulo de Valor Presencial</h3>
+          <div class="space-y-4">
+            <div class="bg-blue-600/20 border border-blue-500/40 p-4 rounded-xl text-blue-300 font-bold">
+              🎓 EXPERIENCIA PRESENCIAL
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-teal-600/20 border border-teal-500/40 p-3 rounded-xl text-teal-300 text-xs font-semibold">
+                💰 Mayor Valor Percibido
+              </div>
+              <div class="bg-emerald-600/20 border border-emerald-500/40 p-3 rounded-xl text-emerald-300 text-xs font-semibold">
+                🤝 Networking Real
+              </div>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 p-4 rounded-xl text-slate-200 text-sm font-semibold">
+              🏢 AULAS 21 ROSARIO: Tu Plataforma de Despegue
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE REGISTRO CON CONFIRMACIÓN Y WHATSAPP -->
+  <section id="registro" class="max-w-3xl mx-auto px-4 sm:px-6 py-20">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 shadow-2xl space-y-6">
+      <div class="text-center space-y-2">
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Reserva tu Lugar en el Taller</h3>
+        <p class="text-sm text-slate-400">Completa tus datos para iniciar la reserva ($4.000 ARS).</p>
+      </div>
+
+      <!-- MENSAJE DE ÉXITO TRAS ENVÍO WEB -->
+      <div id="success-panel" class="hidden bg-slate-950 border border-emerald-500/40 p-6 rounded-2xl text-center space-y-4">
+        <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto">
+          <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <h4 class="text-lg font-bold text-white">¡Solicitud Registrada con Éxito!</h4>
+          <p class="text-xs text-slate-300 mt-1">
+            Se enviaron tus datos a <strong class="text-teal-300">aulas21rosario@gmail.com</strong>.
+          </p>
+        </div>
+        
+        <div class="bg-emerald-500/10 border border-emerald-500/20 p-4 rounded-xl space-y-2 text-left">
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider block">¡Comunícate ahora con tu Asesor!</span>
+          <p class="text-xs text-slate-300">
+            Abre el chat directo de WhatsApp con Aulas 21 Rosario para congelar tu cupo e ingresar los detalles de tu curso.
+          </p>
+          <button id="btn-wa-success" onclick="openWhatsAppChat()" class="w-full mt-2 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs sm:text-sm shadow-lg transition flex items-center justify-center gap-2">
+            <i data-lucide="message-square" class="w-4 h-4"></i>
+            Iniciar Chat Directo por WhatsApp
+          </button>
+        </div>
+      </div>
+
+      <!-- FORMULARIO DE INSCRIPCIÓN -->
+      <form id="registration-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+        
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Nombre Completo</label>
+            <input type="text" name="Nombre" id="reg-name" required placeholder="Ej: Juan Pérez" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">WhatsApp de Contacto</label>
+            <input type="tel" name="WhatsApp" id="reg-phone" required placeholder="Ej: +54 9 341 123 4567" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">Correo Electrónico</label>
+          <input type="email" name="Email" id="reg-email" required placeholder="tuemail@ejemplo.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-300 mb-1">¿Qué tema o especialidad deseas enseñar?</label>
+          <input type="text" name="Tema_a_Ensenar" id="reg-topic" placeholder="Ej: Fotografía, Finanzas, Oficios, Salud, etc." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500">
+        </div>
+
+        <!-- OPCIÓN PRINCIPAL DE ENVÍO -->
+        <button id="btn-submit" type="submit" class="w-full py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+          <i data-lucide="message-square" class="w-5 h-5"></i>
+          <span id="btn-submit-text">Enviar Solicitud por WhatsApp ($4.000 ARS)</span>
+        </button>
+
+        <div class="text-center pt-2">
+          <span class="text-xs text-slate-500">¿Dudas o consultas previas? </span>
+          <button type="button" onclick="openWhatsAppChat()" class="text-xs text-emerald-400 hover:underline font-semibold inline-flex items-center gap-1">
+            <i data-lucide="message-square" class="w-3.5 h-3.5"></i> Chatear al 341 312-8282
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 py-8 bg-slate-950 text-slate-500 text-xs text-center space-y-2">
+    <p>© Aulas 21 Rosario — Experiencias Educativas Únicas.</p>
+    <p>Sitio Oficial: <a href="https://www.aulas21.com.ar" target="_blank" class="text-blue-400 hover:underline">www.aulas21.com.ar</a> • Email: <a href="mailto:aulas21rosario@gmail.com" class="text-teal-400 hover:underline">aulas21rosario@gmail.com</a></p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    // NÚMERO OFICIAL DE WHATSAPP AULAS 21 ROSARIO (5493413128282)
+    const AULAS21_WA_NUMBER = "5493413128282"; 
+
+    // Obtener datos ingresados
+    function getFormData() {
+      return {
+        name: document.getElementById('reg-name').value || "Interesado/a",
+        phone: document.getElementById('reg-phone').value || "No especificado",
+        email: document.getElementById('reg-email').value || "No especificado",
+        topic: document.getElementById('reg-topic').value || "No especificado"
+      };
+    }
+
+    // Abre la conversación de WhatsApp precargando todos los datos del cliente
+    function openWhatsAppChat() {
+      const data = getFormData();
+      const textMessage = `Hola Aulas 21 Rosario, quiero coordinar mi inscripción al taller presencial "De tu Cabeza al Aula".\n\n*Datos del Inscripto:*\n• Nombre: ${data.name}\n• Teléfono/WhatsApp: ${data.phone}\n• Email: ${data.email}\n• Tema a Enseñar: ${data.topic}`;
+      const encodedMsg = encodeURIComponent(textMessage);
+      
+      // Abre el chat en una pestaña nueva hacia el WhatsApp de Aulas 21
+      window.open(`https://wa.me/${AULAS21_WA_NUMBER}?text=${encodedMsg}`, '_blank');
+    }
+
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+      const data = getFormData();
+
+      // Si se prueba abriendo el archivo localmente (file://)
+      if (window.location.protocol === 'file:') {
+        openWhatsAppChat();
+        return;
+      }
+
+      // Si está alojado en servidor web (http/https), envía por mail en segundo plano y luego abre WhatsApp
+      const btnSubmit = document.getElementById('btn-submit');
+      const btnText = document.getElementById('btn-submit-text');
+
+      btnSubmit.disabled = true;
+      btnText.innerText = "Procesando...";
+
+      try {
+        await fetch("https://formsubmit.co/ajax/aulas21rosario@gmail.com", {
+          method: "POST",
+          headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            _subject: `Inscripción Taller "De tu Cabeza al Aula" - ${data.name}`,
+            Nombre: data.name,
+            WhatsApp: data.phone,
+            Email: data.email,
+            "Tema a Enseñar": data.topic,
+            _template: "table"
+          })
+        });
+      } catch (err) {
+        console.warn("Procesando redirección alternativa:", err);
+      } finally {
+        btnSubmit.disabled = false;
+        btnText.innerText = "Enviar Solicitud por WhatsApp ($4.000 ARS)";
+        // Muestra panel de éxito y abre el chat de WhatsApp
+        document.getElementById('registration-form').classList.add('hidden');
+        document.getElementById('success-panel').classList.remove('hidden');
+        openWhatsAppChat();
+      }
+    }
+  </script>
+</body>
+</html>
