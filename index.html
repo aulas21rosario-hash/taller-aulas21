@@ -78,38 +78,46 @@
   <!-- Encabezado / Contenedor Principal -->
   <div class="grid sm:grid-cols-3 gap-4 border-b border-slate-800 pb-5 items-start">
     
-    <!-- Columna Datos del Evento (Ocupa 2 columnas en pantallas grandes) -->
-    <div class="sm:col-span-2 space-y-2.5">
+    <!-- Columna Datos del Evento (Ocupa 2 columnas) -->
+    <div class="sm:col-span-2 space-y-3">
       <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1">
         Cuándo y Dónde
       </span>
 
-      <!-- Fecha y Hora -->
-      <div class="flex items-center gap-2 text-sm text-slate-200 font-semibold">
-        <i data-lucide="calendar" class="w-4 h-4 text-teal-400 shrink-0"></i>
-        <span>Jueves 30 de julio</span>
-        <span class="text-slate-500">•</span>
-        <i data-lucide="clock" class="w-4 h-4 text-teal-400 shrink-0 ml-1"></i>
-        <span>19:00 hs</span>
-      </div>
-
-      <!-- Coffee Break Incluido (Desplazado para alinear exactamente debajo de la hora) -->
-      <div class="flex items-center gap-2 text-xs text-amber-300 font-medium sm:pl-[185px]">
-        <i data-lucide="coffee" class="w-4 h-4 text-amber-400 shrink-0"></i>
-        <span>Coffee break incluido</span>
-      </div>
-
-      <!-- Lugar y Dirección -->
-      <div class="flex items-start gap-2 text-sm text-slate-300 pt-1">
-        <i data-lucide="map-pin" class="w-4 h-4 text-teal-400 shrink-0 mt-0.5"></i>
-        <div>
-          <strong class="text-white block font-bold leading-tight">Aulas 21 Rosario</strong>
-          <span class="text-xs text-slate-400 block">27 de febrero 1718</span>
+      <!-- Estructura de 2 columnas impecable -->
+      <div class="grid grid-cols-2 gap-x-4 gap-y-2.5 items-start">
+        
+        <!-- Fila 1 - Izquierda: Fecha -->
+        <div class="flex items-center gap-2 text-sm text-slate-200 font-semibold">
+          <i data-lucide="calendar" class="w-4 h-4 text-teal-400 shrink-0"></i>
+          <span class="whitespace-nowrap">Jueves 30 de julio</span>
         </div>
+
+        <!-- Fila 1 - Derecha: Hora -->
+        <div class="flex items-center gap-2 text-sm text-slate-200 font-semibold">
+          <i data-lucide="clock" class="w-4 h-4 text-teal-400 shrink-0"></i>
+          <span>19:00 hs</span>
+        </div>
+
+        <!-- Fila 2 - Izquierda: Lugar (Directamente debajo de la fecha) -->
+        <div class="flex items-start gap-2 text-sm text-slate-300">
+          <i data-lucide="map-pin" class="w-4 h-4 text-teal-400 shrink-0 mt-0.5"></i>
+          <div>
+            <strong class="text-white block font-bold leading-tight">Aulas 21 Rosario</strong>
+            <span class="text-xs text-slate-400 block">27 de febrero 1718</span>
+          </div>
+        </div>
+
+        <!-- Fila 2 - Derecha: Coffee Break (Directamente debajo de la hora) -->
+        <div class="flex items-center gap-2 text-xs text-amber-300 font-medium pt-0.5">
+          <i data-lucide="coffee" class="w-4 h-4 text-amber-400 shrink-0"></i>
+          <span>Coffee break incluido</span>
+        </div>
+
       </div>
     </div>
 
-    <!-- Columna Entrada -->
+    <!-- Columna Entrada (Alineada a la derecha) -->
     <div class="sm:text-right flex flex-col items-start sm:items-end pt-1 sm:pt-0 border-t sm:border-t-0 border-slate-800/60 sm:border-none">
       <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-1">
         Entrada
@@ -130,6 +138,7 @@
   </div>
 
 </div>
+
 
       
       
